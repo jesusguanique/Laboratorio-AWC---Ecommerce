@@ -19,7 +19,6 @@ orionbikes/
 ├── index.html
 ├── style.css
 ├── main.js
-├── data.json
 ├── img/
 └── README.md
 
