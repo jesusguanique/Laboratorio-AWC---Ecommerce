@@ -23,9 +23,7 @@ orionbikes/
 ├── img/
 └── README.md
 
-yaml
-Copiar
-Editar
+
 
 ---
 
