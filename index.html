@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>OrionBikes</title>
+
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+</head>
+
+<body id="top">
+  <div class="promocion">
+    <a href="#productos">
+      <p class="promo">Mirá nuestros productos seleccionados, ¡Envío Gratis! 🎉</p>
+    </a>
+  </div>
+
+  <nav class="navbar">
+    <div class="nabvar-center">
+    
+
+      <div class="buscador-container">
+  <input type="text" id="buscador" placeholder="Buscar producto..." />
+  <a href="#productos">
+  <button id="btnBuscar">Buscar</button>
+  </a>
+</div>
+
+      <a href="#top">
+        <img class="navbar-logo" src="./image/logoorion.jpg" alt="logo OrionBikes" />
+      </a>
+    
+
+      <div class="cart-btn">
+        <span class="ver-carrito" id="verCarrito">
+          <i class='bx bxs-cart' id="cart-icon"></i>
+        </span>
+        <span id="cantidadCarrito" class="cantidad-carrito"></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="slider-container">
+      <img src="./image/header6.jpg" class="slide" />
+      <img src="./image/header.jpg" class="slide" />
+      <img src="./image/header5.jpg" class="slide" />
+      <img src="./image/header6.jpg" class="slide" />
+    </div>
+
+    <div class="banner">
+      <h1 class="banner-title">Encontrá los mejores accesorios aquí</h1>
+      <p class="parrafo">¡Tu bici lo merece!</p>
+      <a href="#productos">
+        <button class="banner-btn">Ver más</button>
+      </a>
+    </div>
+  </div>
+
+  <section class="lista" id="productos" data-aos="fade-right">
+    <div class="section-title">
+      <h2>Nuestros Productos</h2>
+    
+    </div>
+  </section>
+
+  <div id="shopContent" class="shop-content"></div>
+
+  <div id="modal-container" class="modal-container"></div>
+  <div id="product-modal" class="product-modal hidden"></div>
+
+  <div class="contacto" data-aos="fade-right">
+    <h2>Contactanos</h2>
+  </div>
+
+  <div class="contenedor">
+    <form class="form" data-aos="flip-left">
+      <div class="form-header">
+        <h3 class="form-title">D<span>ejanos tus dudas</span></h3>
+      </div>
+
+      <label for="nombre" class="form-label">Nombres:</label>
+      <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre" required />
+
+      <label for="direccion" class="form-label">Dirección:</label>
+      <input type="text" id="direccion" class="form-input" placeholder="Escriba su dirección" required />
+
+      <label for="correo" class="form-label">Email:</label>
+      <input type="email" id="correo" class="form-input" placeholder="Escriba su correo" required />
+
+      <label for="mensaje" class="form-label">Mensaje:</label>
+      <textarea class="form-textarea" id="mensaje" placeholder="Deje su mensaje"></textarea>
+
+      <input type="submit" class="btn-submit" value="Enviar consulta" />
+    </form>
+  </div>
+  
+  <footer>
+    <div class="foot-container">
+    
+        <button class="footer-btn">Seguinos en las redes!❤️</button>
+
+      <p class="linea-footer">____________________________________________________________</p>
+
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a></li>
+        <li><a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 - Todos los derechos reservados - info@OrionBikes.com - Tel: 011-4321-1234</p>
+    </div>
+  </footer>
+
+  <script src="./JS/products.js" defer></script>
+  <script src="./JS/main.js" defer></script>
+  <script src="./JS/carrito.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1800,
+      once: false,
+      offset: 120,
+    });
+  </script>
+</body>
+
+</html>
